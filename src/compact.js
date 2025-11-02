@@ -12,8 +12,7 @@
  * // => [1, 2, 3]
  */
 function compact(array) {
-  // let resIndex = -1
-  let resIndex = 0 //for pipeline testing
+  let resIndex = -1
   const result = []
 
   for (const value of array) {

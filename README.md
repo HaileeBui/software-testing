@@ -3,10 +3,11 @@
 
 CI report: https://coveralls.io/github/HaileeBui/software-testing
 
-## Run test
-`npm run test`
-`npm run test compact.test.js`
-`npm run test:coverage`
+## Run tests
+```bash
+npm run test
+npm run test compact.test.js
+npm run test:coverage
 
 ## Purpose of this repository
 

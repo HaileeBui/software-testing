@@ -8,6 +8,7 @@ CI report: https://coveralls.io/github/HaileeBui/software-testing
 npm run test
 npm run test compact.test.js
 npm run test:coverage
+```
 
 ## Purpose of this repository
 

@@ -13,7 +13,7 @@
  */
 function compact(array) {
   // let resIndex = -1
-  let resIndex = 0 //for pipeline testing
+  let resIndex = 0 // Fix to ensure all tests pass
   const result = []
 
   for (const value of array) {

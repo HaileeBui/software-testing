@@ -43,4 +43,3 @@ describe('filter', () => {
   });
 });
 
-//FIX: const result = [[]] -> const result = []

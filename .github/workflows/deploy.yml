@@ -16,6 +16,8 @@ jobs:
         node-version: [20.x, 22.x]
  
     steps:
+    - name: Coveralls GitHub Action
+      uses: coverallsapp/github-action@v2.3.6
     - uses: actions/checkout@v4
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4

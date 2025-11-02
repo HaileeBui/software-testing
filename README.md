@@ -1,5 +1,5 @@
 # Student template
-[![Coverage Status](https://coveralls.io/repos/github/HaileeBui/software-testing/badge.svg)](https://coveralls.io/github/HaileeBui/software-testing)
+[![Coverage Status](https://coveralls.io/repos/github/HaileeBui/software-testing/badge.svg?branch=ci)](https://coveralls.io/github/HaileeBui/software-testing?branch=ci)
 ## Purpose of this repository
 
 This is a project template for students participating in Software Testing course

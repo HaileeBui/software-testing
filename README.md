@@ -10,6 +10,12 @@ npm run test compact.test.js
 npm run test:coverage
 ```
 
+## Note
+`dev` branch contains pipeline and test coverage, code has been fixed for tests to pass
+
+`ci` branch contains only tests and original source code in /src
+
+
 ## Purpose of this repository
 
 This is a project template for students participating in Software Testing course

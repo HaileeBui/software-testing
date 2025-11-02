@@ -17,3 +17,5 @@ describe('add()', () => {
     expect(add(1.2, 3.4)).toBeCloseTo(4.6);
   });
 });
+
+//check pipeline

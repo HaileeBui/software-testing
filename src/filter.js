@@ -26,7 +26,7 @@ function filter(array, predicate) {
   let resIndex = 0
   const length = array == null ? 0 : array.length
   // const result = [[]]
-  const result = [[]] // for pipeline testing
+  const result = [] // for pipeline testing
 
 
   while (++index < length) {

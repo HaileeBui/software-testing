@@ -38,10 +38,10 @@ describe('get', () => {
     expect(get(obj, 'a.b', 'default')).toBe('default');
   });
 
-  // test('returns default when property exists but is explicitly null', () => {
-  //   const obj = { a: { b: null } };
-  //   expect(get(obj, 'a.b', 'default')).toBe('default');
-  // });
+  test('returns default when property exists but is explicitly null', () => {
+    const obj = { a: { b: null } };
+    expect(get(obj, 'a.b', 'default')).toBe('default');
+  });
 });
 
 //FIX: better handlling for undefined or null value, how to handle if path is wrong and no default

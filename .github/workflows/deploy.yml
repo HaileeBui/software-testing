@@ -8,9 +8,9 @@ on:
  
 jobs:
   build:
- 
     runs-on: ubuntu-latest
- 
+    env:
+      CI: false
     strategy:
       matrix:
         node-version: [20.x, 22.x]

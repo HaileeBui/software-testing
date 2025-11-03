@@ -62,7 +62,7 @@ describe('memoize()', () => {
     const value = memoize(values, (obj) => obj.a);
     value(object);
     value.cache.delete(3);
-    expect(value.cache.size).toEqual(1);
+    expect(value.cache.size).toEqual(0);
   });
   test('test cache clear', () => {
     const object = { 'a': 3, 'b': 4 };

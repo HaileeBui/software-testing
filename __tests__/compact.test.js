@@ -21,5 +21,3 @@ describe('compact', () => {
     expect(compact(['0'])).toEqual(['0']);
   });
 });
-
-//FIX: resIndex = 0 

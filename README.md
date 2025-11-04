@@ -1,4 +1,20 @@
-# Student template
+# COMP.SE.200-2025-2026-1 Software Testing
+[![Coverage Status](https://coveralls.io/repos/github/HaileeBui/software-testing/badge.svg?branch=dev)](https://coveralls.io/github/HaileeBui/software-testing?branch=dev)
+
+CI report: https://coveralls.io/github/HaileeBui/software-testing
+
+## Run tests
+```bash
+npm run test
+npm run test compact.test.js
+npm run test:coverage
+```
+
+## Note
+`dev` branch contains pipeline and test coverage, code has been fixed for tests to pass
+
+`ci` branch contains only tests and original source code in /src
+
 
 ## Purpose of this repository
 

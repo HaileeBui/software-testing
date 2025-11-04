@@ -25,4 +25,10 @@ describe('difference()', () => {
   test('test exculding strings', () => {
     expect(difference(["hello", "no", 5], ["hello", "there"])).toEqual(["no", 5]);
   });
+  test('attempt difference between dictionary and an array', () => {
+    expect(difference({'a': 1, 'b' : 2, 'c' : 3}, ["hello", "there"])).toEqual([]);
+  });
+  test('attempt difference between two dictionaries in arrays', () => {
+    expect(difference([{'a': 1, 'b' : 2, 'c' : 3}], [{'a': 1, 'b' : 2}])).toEqual([{'a': 1, 'b' : 2, 'c' : 3}]);
+  });
 });

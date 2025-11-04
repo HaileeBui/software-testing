@@ -22,4 +22,22 @@ describe('capitalize()', () => {
   test('capitalize a string Fred', () => {
     expect(capitalize("Fred")).toEqual("Fred");
   });
+  test('capitalize a number sequence', () => {
+    expect(capitalize(1234)).toEqual("1234");
+  });
+  test('capitalize an empty array', () => {
+    expect(capitalize([])).toEqual("");
+  });
+  test('capitalize an undefined array', () => {
+    expect(capitalize([NaN, undefined, null])).toEqual("Nan,,");
+  });
+  test('capitalize null', () => {
+    expect(capitalize(null)).toEqual("Null");
+  });
+  test('capitalize NaN', () => {
+    expect(capitalize(NaN)).toEqual("Nan");
+  });
+  test('capitalize symbols', () => {
+    expect(capitalize("$£@£@$$€€[]@{$")).toEqual("$£@£@$$€€[]@{$");
+  });
 });

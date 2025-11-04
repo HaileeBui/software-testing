@@ -1,10 +1,10 @@
 import memoize from '../src/memoize.js';
 
-function values(array){
+function values(dictionary){
   var arr = [];
-  for (var key in array) {
-      if (array.hasOwnProperty(key)) {
-          arr.push( array[key] );
+  for (var key in dictionary) {
+      if (dictionary.hasOwnProperty(key)) {
+          arr.push( dictionary[key] );
       }
   }
   return arr;
@@ -70,5 +70,29 @@ describe('memoize()', () => {
     value(object);
     value.cache.clear(); // clears cache
     expect(value.cache.size).toEqual(0);
+  });
+  test('test weakmap example', () => {
+    memoize.Cache = WeakMap;
+    const object = { 'a': 1, 'b': 2 };
+    const other = { 'c': 3, 'd': 4 };
+  
+    const value = memoize((a) => values(a));
+    expect(value(object)).toEqual([1, 2]);
+    object.a = 2;
+    expect(value(object)).toEqual([1, 2]);
+    expect(value(other)).toEqual([3, 4]);
+
+    value.cache.set(object, ['a', 'b']);
+    expect(value(other)).toEqual([3, 4]);
+    expect(value(object)).toEqual(['a', 'b']);
+  });
+  test('test constructor change', () => {
+    memoize.Cache = WeakMap;
+    const object = { 'a': 1, 'b': 2 };
+  
+    const value = memoize((a) => values(a));
+    value(object);
+    memoize.Cache = Map;
+    expect(value(object)).toEqual([1, 2]);
   });
 });

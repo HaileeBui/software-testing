@@ -41,5 +41,10 @@ describe('filter', () => {
       { user: 'pebbles', active: true }
     ]);
   });
+  
+  test('handles null or undefined array', () => {
+    expect(filter(null, x => true)).toEqual([]);
+    expect(filter(undefined, x => true)).toEqual([]);
+  });  
 });
 

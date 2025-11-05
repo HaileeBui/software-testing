@@ -91,6 +91,12 @@ describe('toNumber', () => {
     expect(toNumber('1e3')).toBe(1000);
     expect(toNumber('-2.5e2')).toBe(-250);
   });
+
+  test('handles object without valueOf function', () => {
+    const obj = Object.create(null);
+    obj.toString = () => '123';
+    expect(toNumber(obj)).toBe(123);
+  });
 });
 
 

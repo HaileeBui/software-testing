@@ -3,10 +3,18 @@
 
 CI report: https://coveralls.io/github/HaileeBui/software-testing
 
-## Run test
-`npm run test`
-`npm run test compact.test.js`
-`npm run test:coverage`
+## Run tests
+```bash
+npm run test
+npm run test compact.test.js
+npm run test:coverage
+```
+
+## Note
+`dev` branch contains pipeline and test coverage, code has been fixed for tests to pass
+
+`ci` branch contains only tests and original source code in /src
+
 
 ## Purpose of this repository
 

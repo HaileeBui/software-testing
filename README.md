@@ -1,5 +1,5 @@
 # COMP.SE.200-2025-2026-1 Software Testing
-[![Coverage Status](https://coveralls.io/repos/github/HaileeBui/software-testing/badge.svg?branch=dev-ville)](https://coveralls.io/github/HaileeBui/software-testing?branch=dev)
+[![Coverage Status](https://coveralls.io/repos/github/HaileeBui/software-testing/badge.svg?branch=dev)](https://coveralls.io/github/HaileeBui/software-testing?branch=dev)
 
 CI report: https://coveralls.io/github/HaileeBui/software-testing
 

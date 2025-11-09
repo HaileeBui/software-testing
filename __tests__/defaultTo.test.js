@@ -4,16 +4,15 @@ describe('defaultTo()', () => {
   test('tests null', () => {
     expect(defaultTo(null, 0)).toBe(0);
   });
-  /*
   test('tests NaN', () => {
     expect(defaultTo(NaN, 0)).toBe(0);
-  });*/
+  });
   test('tests undefined', () => {
     expect(defaultTo(undefined, 0)).toBe(0);
   });
-  /*test('tests array', () => {
+  test('tests array', () => {
     expect(defaultTo([], 0)).toBe([]);
-  });*/
+  });
   test('tests string', () => {
     expect(defaultTo("undefined", 0)).toBe("undefined");
   });

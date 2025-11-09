@@ -29,7 +29,7 @@ describe('add()', () => {
   test('handles zeros', () => {
     expect(add(0, 0)).toBe(0);
   });
-/*
+
   test('handles undefined and a number', () => {
     expect(add(1, undefined)).toBe(NaN);
   });
@@ -56,7 +56,7 @@ describe('add()', () => {
 
   test('handles two numerical strings correctly', () => {
     expect(add("-1", "100")).toBe(NaN).toThrow(Error);
-  });**/
+  });
 
   test('works with floating point numbers', () => {
     expect(add(1.2, 3.4)).toBeCloseTo(4.6);

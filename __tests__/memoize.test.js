@@ -95,4 +95,9 @@ describe('memoize()', () => {
     memoize.Cache = Map;
     expect(value(object)).toEqual([1, 2]);
   });
+
+  test('throws TypeError when function is not a function', () => {
+    expect(() => memoize(null)).toThrow(TypeError);
+    expect(() => memoize(123)).toThrow(TypeError);
+  });
 });

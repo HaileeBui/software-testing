@@ -11,7 +11,9 @@ npm run test:coverage
 ```
 
 ## Note
-`dev` branch contains pipeline and test coverage, code has been fixed for tests to pass. Some tests are commented out for CI to run in case we do not fix the code. 
+`dev` branch contains pipeline and test coverage, code has been fixed for tests to pass (CI only run when all test passes). Some tests are commented out for CI to run in case we do not fix the code. 
+
+`ci` branch contains only added tests
 
 The coverage reports return 100% in branch, funcs and lines for the 10 functions that we tested. However, the final coverage showed in README was affected by other related functions that we have not written test for. 
 

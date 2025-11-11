@@ -11,9 +11,9 @@ npm run test:coverage
 ```
 
 ## Note
-`dev` branch contains pipeline and test coverage, code has been fixed for tests to pass
+`ci` branch contains only tests 
 
-`ci` branch contains only tests and original source code in /src
+`dev` branch contains working pipeline, code has been fixed for tests to pass
 
 
 ## Purpose of this repository
